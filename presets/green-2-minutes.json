@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "steps": [
+    {"mode": "solid", "red": 0, "green": 255, "blue": 0, "brightness": 25, "duration_ms": 120000, "blink_hz": 2.0}
+  ]
+}

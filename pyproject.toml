@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uno-lighting-controller"
+version = "0.1.0"
+description = "PySide6 sequence editor for a WS2811 strip driven by Arduino Uno"
+requires-python = ">=3.10"
+# Addons includes QtSerialPort and depends on Essentials (QtCore/QtWidgets).
+# The full PySide6 meta-package also pulls in WebEngine/PDF, unused here.
+dependencies = ["PySide6-Addons>=6.9,<7"]
+
+[project.scripts]
+uno-lighting-controller = "lighting_controller.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "desktop"}
+
+[tool.setuptools.packages.find]
+where = ["desktop"]
